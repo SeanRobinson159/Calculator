@@ -9,8 +9,6 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
-
-
     private EditText display;
     private TextView history;
     private double total;
@@ -118,14 +116,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 total = num1/100;
                 display.setText(total+"");
                 break;
+
             case R.id.log:
                 break;
             case R.id.ln:
                 break;
-
-            case R.id.squared:
             case R.id.ans:
                 break;
+
+            case R.id.squared:
                 num1 = Double.parseDouble(display.getText().toString());
                 history.setText(num1+"²=");
                 total = Math.pow(num1,2);
