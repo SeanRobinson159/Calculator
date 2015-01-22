@@ -2,7 +2,7 @@
 <resources>
 
     <string name="action_settings"></string>
-    <string name="app_name">SimpleCalculator</string>
+    <string name="app_name">MyFirstCalculator</string>
 
 
     <string name="history"></string>
