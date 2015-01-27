@@ -20,6 +20,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private double lastAnswer;
     private String lastHistory;
     private Button CE;
+	private boolean isAnswer;
 
 
     @Override
@@ -214,8 +215,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 lastHistory = history.getText().toString();
                 lastAnswer = total;
                 display.setText(total + "");
-
                 isDecimal = false;
+	            CE.setVisibility(View.INVISIBLE);
                 num1 = num2 = 0;
                 break;
         }
