@@ -231,9 +231,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
         } else
             total = total * 10 + number;
 
-        if (!isDecimal)
-            display.setText((int) total + "");
-        else
+        //if (!isDecimal)
+          //  display.setText((int) total + "");
+        //else
             display.setText(total + "");
 
     }
