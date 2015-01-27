@@ -223,13 +223,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     public void updateNumber(double number) {
         CE.setVisibility(View.VISIBLE);
-        total = Double.parseDouble(display.getText().toString());
+        num1 = Double.parseDouble(display.getText().toString());
         if (isDecimal) {
-            display.setText(total + "" + (int) number);
+            display.setText(num1 + "" + (int) number);
             total = Double.parseDouble(display.getText().toString());
             //isDecimal = false;
         } else
-            total = total * 10 + number;
+            total = num1 * 10 + number;
 
         if (!isDecimal)
             display.setText((int) total + "");
