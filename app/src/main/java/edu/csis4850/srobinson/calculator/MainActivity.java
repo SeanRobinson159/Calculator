@@ -63,25 +63,29 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 isDecimal = false;
                 total = Math.sin(Math.toRadians(num1));
                 display.setText(total + "");
-                break;
+	            CE.setVisibility(View.INVISIBLE);
+	            break;
             case R.id.cos:
                 num1 = Double.parseDouble(display.getText().toString());
                 history.setText("cos(" + num1 + ")=");
                 isDecimal = false;
                 total = Math.cos(Math.toRadians(num1));
                 display.setText(total + "");
-                break;
+	            CE.setVisibility(View.INVISIBLE);
+	            break;
             case R.id.tan:
                 num1 = Double.parseDouble(display.getText().toString());
                 history.setText("tan(" + num1 + ")=");
                 isDecimal = false;
                 total = Math.tan(Math.toRadians(num1));
                 display.setText(total + "");
-                break;
+	            CE.setVisibility(View.INVISIBLE);
+	            break;
             case R.id.pi:
                 updateNumber(Math.PI);
                 isDecimal=true;
-                break;
+	            CE.setVisibility(View.INVISIBLE);
+	            break;
 
             case R.id.factorial:
                 num1 = Double.parseDouble(display.getText().toString());
@@ -91,7 +95,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     total = total * (i - 1);
                 }
                 display.setText(total + "");
-                break;
+	            CE.setVisibility(View.INVISIBLE);
+	            break;
             case R.id.percent:
                 num1 = Double.parseDouble(display.getText().toString());
                 history.setText(num1 + "%=");
@@ -105,14 +110,16 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 total = Math.log10(num1);
                 display.setText(total + "");
                 isDecimal = false;
-                break;
+	            CE.setVisibility(View.INVISIBLE);
+	            break;
             case R.id.ln:
                 num1 = Double.parseDouble(display.getText().toString());
                 history.setText("ln(" + total + ")");
                 total = Math.log(num1);
                 display.setText(total + "");
                 isDecimal = false;
-                break;
+	            CE.setVisibility(View.INVISIBLE);
+	            break;
 
             case R.id.ans:
                 display.setText(lastAnswer + "");
@@ -124,13 +131,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 history.setText(num1 + "²=");
                 total = Math.pow(num1, 2);
                 display.setText(total + "");
-                break;
+	            CE.setVisibility(View.INVISIBLE);
+	            break;
             case R.id.root:
                 num1 = Double.parseDouble(display.getText().toString());
                 history.setText("√(" + num1 + ")=");
                 total = Math.sqrt(num1);
                 display.setText(total + "");
-                break;
+	            CE.setVisibility(View.INVISIBLE);
+	            break;
 
 
             case R.id.decimal:
