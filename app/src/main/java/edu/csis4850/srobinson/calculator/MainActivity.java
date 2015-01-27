@@ -201,7 +201,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
             case R.id.equals:
                 num2 = Double.parseDouble(display.getText().toString());
-                history.setText(history.getText().toString() + num1 + "=");
+                history.setText(history.getText().toString() + num2 + "=");
                 if (operation == "add") {
                     total = num1 + num2;
                 } else if (operation == "subtract") {
@@ -231,9 +231,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
         } else
             total = total * 10 + number;
 
-        //if (!isDecimal)
-          //  display.setText((int) total + "");
-        //else
+        if (!isDecimal)
+            display.setText((int) total + "");
+        else
             display.setText(total + "");
 
     }
