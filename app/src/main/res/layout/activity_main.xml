@@ -345,4 +345,17 @@
         android:layout_toEndOf="@id/display"
         android:height="60dp" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ce"
+        android:id="@+id/ce"
+        android:background="@android:color/holo_blue_bright"
+        android:singleLine="false"
+        android:height="60dp"
+        android:layout_alignTop="@+id/AC"
+        android:layout_toRightOf="@+id/root"
+        android:layout_toEndOf="@+id/root"
+        android:visibility="invisible" />
+
 </RelativeLayout>
